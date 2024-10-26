@@ -24,8 +24,6 @@ hr {
 	width: 90vw;
 }
 
-
-
 /* About Section */
 #profile-container {
 	justify-self: center;
@@ -36,7 +34,7 @@ hr {
 }
 
 #profile-picture {
-	height: 400px;
+	height: 500px;
 	border-radius: 10%;
 }
 
@@ -58,3 +56,34 @@ hr {
 /* Project Section */
 
 /* Contact Section */
+#contact-container {
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+table > tr > td.icon {
+	text-align: left;
+	width: 40px;
+}
+
+table > tr > td.text {
+	text-align: left;
+	width: 200px;
+	height: 50px;
+}
+
+.contact-icon {
+	width: 2rem;
+}
+
+#table-container > h2 {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#picture2 {
+	width: 400px;
+	border-radius: 10%;
+}
