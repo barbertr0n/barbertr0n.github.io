@@ -19,11 +19,11 @@ const Contact = () => {
                 <td className='text'>tom@example.com </td>
             </tr>
             <tr>
-                <td className='icon'><img src={github_mark} className='contact-icon' /></td>
+                <td className='icon'><a href='https://github.com/barbertr0n'><img src={github_mark} className='contact-icon' /></a></td>
                 <td className='text'>barbertr0n</td>
-                <td className='icon'><img src={linkedin_mark} className='contact-icon' /></td>
+                <td className='icon'><a href='https://www.linkedin.com/in/barber-thomas/'><img src={linkedin_mark} className='contact-icon' /></a></td>
                 <td className='text'>LinkedIn</td>
-                
+                
             </tr>
         </table>
         </div>
