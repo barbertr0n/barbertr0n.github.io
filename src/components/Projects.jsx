@@ -10,13 +10,34 @@ import Project5 from '../assets/Project5.png';
 const Projects = () => {
 	const [currentProject, setCurrentProject] = useState('Project 1');
 	const [currentProjectImage, setCurrentProjectImage] = useState(Project1);
-	const [currentProjectText, setCurrentProjectText] = useState("Default text for the project");
+	const [currentProjectText, setCurrentProjectText] = useState(selectProjectText());
 
-	function handleClick(name, img) {
+	function handleClick(name, img) {		
 		setCurrentProject(name);
-		setCurrentProjectImage(img)
-		setCurrentProjectText("changed text for the project")
-		console.log(currentProject);
+		setCurrentProjectImage(img);
+		setCurrentProjectText(selectProjectText(name));
+	}
+	
+	function selectProjectText(name) {
+		let info;
+		switch(name) {
+			default:
+				info = "Project 1 Information"
+				break;
+			case 'Project 2':
+				info = "Project 2 Information"
+				break;
+			case 'Project 3':
+				info = "Project 3 Information"
+				break;
+			case 'Project 4':
+				info = "Project 4 Information"
+				break;
+			case 'Project 5':
+				info = "Project 5 Information"
+				break;
+		};
+		return info
 	}
 
 	return (

@@ -28,7 +28,7 @@ function App() {
 
 		<hr />
 		<footer>
-			<p1>Portfolio, Copyright &copy; 2024</p1>
+			<p>Portfolio, Copyright &copy; 2024</p>
 		</footer>
 	</>
 	)
