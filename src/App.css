@@ -54,6 +54,31 @@ hr {
 }
 
 /* Project Section */
+#projects-container {
+	display: flex;	
+	justify-content: center;
+	background-color: red;
+}
+
+#project-title-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	flex-grow: 1;
+}
+
+.project-title {
+	background-color: green; 
+}
+
+.project-title:hover {
+	background-color: yellow;
+}
+
+#project-info {
+	flex-grow: 2;
+	background-color: blue;
+}
 
 /* Contact Section */
 #contact-container {

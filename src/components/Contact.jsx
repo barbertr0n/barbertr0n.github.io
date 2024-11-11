@@ -23,7 +23,6 @@ const Contact = () => {
                 <td className='text'>barbertr0n</td>
                 <td className='icon'><a href='https://www.linkedin.com/in/barber-thomas/'><img src={linkedin_mark} className='contact-icon' /></a></td>
                 <td className='text'>LinkedIn</td>
-                
             </tr>
         </table>
         </div>
