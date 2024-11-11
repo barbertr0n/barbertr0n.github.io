@@ -80,6 +80,10 @@ hr {
 	background-color: blue;
 }
 
+#project-image {
+	height: 300px;
+}
+
 /* Contact Section */
 #contact-container {
 	display: flex;

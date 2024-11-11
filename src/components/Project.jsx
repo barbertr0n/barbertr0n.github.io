@@ -3,9 +3,9 @@ import React from 'react';
 function Project(props) {
 	return (
 		<>
-			<p>{props.title}</p>
-			<image />
-			<p>TEST SENTENCE WILL GO HERE TO SEE WHAT SPACE WE HAVE.</p>
+			<h3>{props.title}</h3>
+			<img id='project-image' src={props.projectImage}></img>
+			<p>{props.text}</p>
 		</>
 	)
 };

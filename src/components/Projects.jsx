@@ -1,30 +1,35 @@
 import React from 'react';
 import {useState} from 'react';
 import Project from './project.jsx';
+import Project1 from '../assets/Project1.png';
+import Project2 from '../assets/Project2.png';
+import Project3 from '../assets/Project3.png';
+import Project4 from '../assets/Project4.png';
+import Project5 from '../assets/Project5.png';
 
 const Projects = () => {
-	const [currentProject, setCurrentProject] = useState('project-1');
+	const [currentProject, setCurrentProject] = useState('Project 1');
+	const [currentProjectImage, setCurrentProjectImage] = useState(Project1);
+	const [currentProjectText, setCurrentProjectText] = useState("Default text for the project");
 
-	function handleClick() {
-		setCurrentProject('changed state');
+	function handleClick(name, img) {
+		setCurrentProject(name);
+		setCurrentProjectImage(img)
+		setCurrentProjectText("changed text for the project")
 		console.log(currentProject);
 	}
 
 	return (
 		<div id='projects-container'>
 			<aside id='project-title-container'>
-				<div className='project-title' onClick={handleClick} >Project 1</div>
-				<div className='project-title'  onClick={handleClick} >Project 2</div>
-				<div className='project-title' onClick={handleClick} >Project 3</div>
-				<div className='project-title' onClick={handleClick} >Project 4</div>
-				<div className='project-title' nClick={handleClick} >Project 5</div>
+				<div className='project-title' onClick={() => handleClick('Project 1', Project1)} >Project 1</div>
+				<div className='project-title' onClick={() => handleClick('Project 2', Project2)} >Project 2</div>
+				<div className='project-title' onClick={() => handleClick('Project 3', Project3)} >Project 3</div>
+				<div className='project-title' onClick={() => handleClick('Project 4', Project4)} >Project 4</div>
+				<div className='project-title' onClick={() => handleClick('Project 5', Project5)} >Project 5</div>
 			</aside>
 			<section id='project-info'>
-				<Project title="project-1" />
-				<Project title={currentProject} />
-				<Project title="project-3" />
-				<Project title="project-4" />
-				<Project title="project-5" />
+				<Project title={currentProject} projectImage={currentProjectImage} text={currentProjectText} />
 			</section>
 		</div>
 	)
