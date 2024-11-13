@@ -10,11 +10,9 @@ function App() {
   return (
 	<>
 		<Navbar />
+		<hr/>
 		<Header />
-		<hr/>
-		<p>A site to display all of my my accolades and projects.</p>
-		<hr/>
-		<br />
+		<hr />
 		<About />
 
 		<h2 id='about'>About, Skills & Accolades</h2>

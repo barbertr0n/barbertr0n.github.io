@@ -8,7 +8,7 @@ import Project4 from '../assets/Project4.png';
 import Project5 from '../assets/Project5.png';
 
 const Projects = () => {
-	const Project1Info = 'Project 1 information';
+	const Project1Info = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi temporibus ducimus repellat reprehenderit eveniet similique earum vitae sit exercitationem sapiente. Ratione earum minima ex quo nobis quasi veniam? Cumque, illum.Quidem neque ad molestiae at dolorem illum provident delectus ullam quae voluptatem suscipit repellat nisi qui, maiores vel doloremque cupiditate nobis dolorum sequi? Quis quisquam soluta, nobis praesentium porro voluptatibusEsse ea earum reprehenderit cupiditate dolore ducimus doloribus expedita sunt reiciendis? Libero culpa modi facere odio nam quis placeat quod illo iste. Aperiam assumenda maxime error eaque, animi molestiae non.Aut commodi iure error, eius et repudiandae quasi quam optio atque explicabo magni adipisci? Quis quisquam soluta, nobis praesentium porro voluptatibusEsse ea earum reprehenderit cupiditate dolore ducimus doloribus expedita sunt reiciendis? Libero culpa modi facere odio nam quis placeat quod illo iste. Aperiam assumenda maxime error eaque, animi molestiae non.Aut commodi iure error, eius et repudiandae quasi quam optio atque explicabo magni adipisci?';
 
 	const [currentProject, setCurrentProject] = useState('Project 1');
 	const [currentProjectImage, setCurrentProjectImage] = useState(Project1);
@@ -29,7 +29,7 @@ const Projects = () => {
 
 	return (
 		<div id="projects-container">
-			<aside id="project-title-container">
+			<div id="project-title-container">
 				<div className="project-title" onClick={() => handleClick('Project 1', Project1)}>
 					Project 1
 				</div>
@@ -45,7 +45,7 @@ const Projects = () => {
 				<div className="project-title" onClick={() => handleClick('Project 5', Project5)}>
 					Project 5
 				</div>
-			</aside>
+			</div>
 			<section id="project-info">
 				<Project title={currentProject} projectImage={currentProjectImage} text={currentProjectText} />
 			</section>
