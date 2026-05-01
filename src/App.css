@@ -24,23 +24,17 @@ hr {
 	width: 90vw;
 }
 
-/* About Section */
+/* Profile Section */
 #profile-container {
 	justify-self: center;
 	display: flex;
 	align-items: center;
 	max-width: 80vw;
-	/* background-color: chocolate; */
 }
 
 #profile-picture {
 	height: 500px;
 	border-radius: 10%;
-}
-
-#profile-text-bloc {
-
-	/* background-color: green; */
 }
 
 #profile-text {
@@ -50,14 +44,25 @@ hr {
 
 #name {
 	margin: 0;
-	font-size: 400%;
+}
+
+/* About Section */
+#about-text {
+	justify-self: center;
+	width: 90%
+}
+
+/* Accolades Section */
+#accolades-text {
+	justify-self: center;
+	width: 90%
 }
 
 /* Project Section */
 #projects-container {
 	display: flex;	
 	justify-self: center;
-	max-width: 90%;
+	width: 90%;
 	min-height: 700px;
 }
 
@@ -83,7 +88,7 @@ hr {
 }
 
 #project-info {
-	max-width: 95%;
+	width: 80%;
 	border-left-style: solid;
 	border-left-width: 2px;
 	border-left-color: gray;
@@ -105,14 +110,8 @@ hr {
 }
 
 table > tr > td.icon {
-	text-align: left;
-	width: 40px;
-}
-
-table > tr > td.text {
-	text-align: left;
-	width: 200px;
-	height: 50px;
+	justify-content: center;
+	width: 100px;
 }
 
 .contact-icon {
@@ -124,7 +123,31 @@ table > tr > td.text {
 	margin-top: 10px;
 }
 
+#contact-table {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-text {
+	margin-top: 0;
+}
+
 #picture2 {
 	width: 400px;
 	border-radius: 10%;
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	width: 20vw;
+}
+
+#f-label {
+	font-size: 150%;
+}
+
+.f-input {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }

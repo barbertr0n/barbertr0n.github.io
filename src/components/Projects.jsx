@@ -30,14 +30,14 @@ const Projects = () => {
 	return (
 		<div id="projects-container">
 			<div id="project-title-container">
-				<div className="project-title" onClick={() => handleClick('Project 1', Project1)}>
-					Project 1
+				<div className="project-title" onClick={() => handleClick('Cragline.org', Project1)}>
+					Cragline.org
 				</div>
-				<div className="project-title" onClick={() => handleClick('Project 2', Project2)}>
-					Project 2
+				<div className="project-title" onClick={() => handleClick('rs-todo', Project2)}>
+					rs-todo
 				</div>
-				<div className="project-title" onClick={() => handleClick('Project 3', Project3)}>
-					Project 3
+				<div className="project-title" onClick={() => handleClick('Text Explorer', Project3)}>
+					Text Explorer
 				</div>
 				<div className="project-title" onClick={() => handleClick('Project 4', Project4)}>
 					Project 4
